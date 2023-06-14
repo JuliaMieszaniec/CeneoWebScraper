@@ -28,7 +28,7 @@
                             <a class="nav-link" href="{{url_for('index')}}"><i class="bi bi-house-fill"></i> Strona główna</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{url_for('extract)}}"><i class="bi bi-cloud-download-fill"></i>
+                            <a class="nav-link" href="{{url_for('extract')}}"><i class="bi bi-cloud-download-fill"></i>
  Pobierz produkt</a>
                         </li>
                         <li class="nav-item">
@@ -49,13 +49,13 @@
             </div>
             <div class="row">
                 <div class="col">
-                    {% block title %}{% endblock %}
+                    {% block content %}{% endblock %}
                 </div>
             </div>
         </div>
         <footer class="container alert alert-success fixed-bottom">
             (c) Katarzyna Wójcik, Uniwersytet Ekonomiczny w Krakowie
         </footer>
-        {% block title %}{% endblock %}
+        {% block scripts %}{% endblock %}
     </body>
 </html>
